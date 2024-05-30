@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/indie-tunes-nodejs/static/css/main.0ae22e55.css",
+    "main.js": "/indie-tunes-nodejs/static/js/main.2c34a4a3.js",
+    "index.html": "/indie-tunes-nodejs/index.html",
+    "main.0ae22e55.css.map": "/indie-tunes-nodejs/static/css/main.0ae22e55.css.map",
+    "main.2c34a4a3.js.map": "/indie-tunes-nodejs/static/js/main.2c34a4a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ae22e55.css",
+    "static/js/main.2c34a4a3.js"
+  ]
+}
