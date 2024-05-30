@@ -1,0 +1,29 @@
+/* footer */
+
+#main-footer {
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: var(--border-color);
+  margin-top: 10px;
+  height: fit-content;
+}
+
+#contact-footer {
+  text-align: center;
+  margin: 10px;
+}
+
+#contact-footer a {
+  text-decoration: none;
+  color: black;
+}
+
+#contact-footer a:hover {
+  text-decoration: none;
+  color: teal;
+}
+
+#reasources-footer {
+  text-align: center;
+  margin: 10px;
+}

@@ -1,0 +1,275 @@
+/* Structure */
+:root {
+  --background-color: lightblue;
+  --border-color: teal;
+  --primary-color: #56a1a4;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.margins {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 0;
+  padding: 0;
+}
+
+.wrap-small {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Main-content artists & genres */
+.directory {
+  justify-content: center;
+}
+
+.search-bar img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Main-content album */
+
+#album {
+  padding-top: 10px;
+}
+
+#album ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+#album li {
+  text-decoration: none;
+}
+
+#song-list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+#song-list li {
+  text-decoration: none;
+}
+
+.song {
+  min-width: max-content;
+  display: flex;
+  margin-bottom: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--border-color);
+  padding: 5px;
+}
+
+.song img {
+  width: 15px;
+  padding: 0;
+  position: relative;
+  top: 2px;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+}
+
+.right {
+  flex: 1;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.song a {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+/* Main-content artist */
+
+#artist {
+  padding-top: 10px;
+}
+
+#artist p {
+  text-align: left;
+}
+
+#artist-img {
+  width: 200px;
+}
+
+/* artist list */
+
+.artist-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.artist-list li {
+  padding: 0;
+  flex: 1;
+}
+
+/* Main-content genre */
+
+#genre {
+  padding-top: 10px;
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*main content cart */
+
+#payment {
+  text-align: right;
+}
+
+#payment ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+#payment li {
+  padding: 5px;
+  white-space: nowrap;
+}
+
+/* Typography */
+#main-header h1 {
+  text-align: center;
+}
+
+/* Special */
+.hidden {
+  display: none;
+}
+
+.hide-small {
+  display: none;
+}
+
+button {
+  color: black;
+  background-color: #56a1a4;
+  border-color: teal;
+  font-size: medium;
+  padding: 5px;
+}
+
+button:hover {
+  color: white;
+  background-color: #56a1a4;
+  border-color: teal;
+  font-size: medium;
+  padding: 5px;
+}
+
+#result {
+  color: green;
+}
+
+/* Form */
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+form section section {
+  padding: 10px;
+  border-radius: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--border-color);
+  max-width: fit-content;
+  width: fit-content;
+}
+
+form section label {
+  display: block;
+  width: fit-content;
+  margin-bottom: 5px;
+}
+/*Contact Form*/
+
+#map {
+  width: 100%;
+  text-align: center;
+}
+
+/*Media Query*/
+@media only screen and (min-width: 900px) {
+  .columns {
+    display: flex;
+  }
+
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  .one {
+    flex: 1;
+  }
+
+  .two {
+    flex: 2;
+  }
+
+  .three {
+    flex: 3;
+  }
+
+  .four {
+    flex: 4;
+  }
+
+  .five {
+    flex: 5;
+  }
+
+  .wrap-small {
+    flex-wrap: nowrap;
+  }
+
+  /* main-content (artists & generes) */
+
+  .subheadding h2 {
+    margin-bottom: 0;
+    max-width: fit-content;
+  }
+
+  .search-bar {
+    text-align: right;
+    position: relative;
+    top: 20px;
+    margin-bottom: 0;
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  .hide-small {
+    display: block;
+  }
+
+  /* form */
+
+  form {
+    display: block;
+  }
+}

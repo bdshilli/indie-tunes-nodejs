@@ -1,0 +1,61 @@
+/* Structure */
+
+.margins {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 0;
+  padding: 0;
+}
+
+.wrap-small {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Special */
+.hidden {
+  display: block;
+}
+
+.hide-small {
+  display: none;
+}
+
+/*Media Query*/
+@media only screen and (min-width: 900px) {
+  .columns {
+    display: flex;
+  }
+
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  .one {
+    flex: 1;
+  }
+
+  .two {
+    flex: 2;
+  }
+
+  .three {
+    flex: 3;
+  }
+
+  .four {
+    flex: 4;
+  }
+
+  .five {
+    flex: 5;
+  }
+
+  .wrap-small {
+    flex-wrap: nowrap;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
