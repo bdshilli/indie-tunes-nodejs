@@ -8,7 +8,7 @@ import Contact from "./pages/contact";
 import About from "./pages/about";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
