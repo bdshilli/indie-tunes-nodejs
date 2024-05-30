@@ -1,6 +1,9 @@
-/*import { useState } from "react";
+import { useState } from "react";
+import "../styles/form.css";
+import "../styles/styles.css";
+
 const Contact = () => {
-  const [result, setResult] = React.useState("");
+  const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -28,11 +31,54 @@ const Contact = () => {
   return (
     <div>
       <form onSubmit={onSubmit}>
-        <input type="text" name="name" required />
-        <input type="email" name="email" required />
-        <textarea name="message" required></textarea>
+        <section>
+          <section>
+            <p>
+              <label for="name">Name:</label>
+              <input
+                id="name"
+                type="text"
+                placeholder="First and Last Name"
+                name="name"
+                required
+              />
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="example@email.com"
+                required
+              />
+            </p>
+            <p>
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Type your message here!"
+                required
+              ></textarea>
+            </p>
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://web3forms.com/success"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="Contact from Indie Tunes Website"
+            />
+            <input type="hidden" name="from_name" value="My Website" />
+          </section>
 
-        <button type="submit">Submit Form</button>
+          <p>
+            <button type="submit">Send Message</button>
+          </p>
+        </section>
       </form>
       <span>{result}</span>
     </div>
@@ -40,4 +86,3 @@ const Contact = () => {
 };
 
 export default Contact;
-*/

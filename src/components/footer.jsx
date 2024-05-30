@@ -1,11 +1,11 @@
 import "../styles/footer.css";
 import "../styles/styles.css";
-
+import { Outlet, Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <header id="main-footer">
+    <footer id="main-footer">
       <div id="contact-footer" class="margins">
-        <a>contact</a>
+        <Link to="/contact">Contact Us</Link>
         <a>|</a>
         <a href="submit.html">Submit Album</a>
       </div>
@@ -16,7 +16,7 @@ const Footer = () => {
           Icons8
         </a>
       </div>
-    </header>
+    </footer>
   );
 };
 

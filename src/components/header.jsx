@@ -20,10 +20,10 @@ const Header = () => {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/artist-list">Artists</Link>
+              <Link to="/artistlist">Artists</Link>
             </li>
             <li>
-              <Link to="/genre-list">Genres</Link>
+              <Link to="/genrelist">Genres</Link>
             </li>
             <li>
               <Link to="/cart">Cart</Link>

@@ -1,4 +1,5 @@
-/*const about = () => {
+const about = () => {
+  /*
   function importAll(r) {
     return r.keys().map(r);
   }
@@ -16,9 +17,7 @@
     setIndex(index === 0 ? images.length - 1 : index - 1);
   };
 
-  return (
-    <div id="genre" class="margins">
-      <section id="slideshow" class="banner">
+  <section id="slideshow" class="banner">
         <img src={images[index]} alt={images[index]} />
         <p id="forward-arrow" onClick={slideForward}>
           &gt;
@@ -27,7 +26,11 @@
           &lt;
         </p>
       </section>
-      <section class>
+    */
+  return (
+    <div id="genre" class="margins">
+      <section class="banner"></section>
+      <section>
         <h2>About Us</h2>
         <h3>Our Purpose</h3>
         <p>
@@ -63,4 +66,3 @@
 };
 
 export default about;
-*/

@@ -1,0 +1,28 @@
+/* Form */
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+form section section {
+  padding: 10px;
+  border-radius: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--border-color);
+  max-width: fit-content;
+  width: fit-content;
+}
+
+form section label {
+  display: block;
+  width: fit-content;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 900px) {
+  form {
+    display: block;
+  }
+}
