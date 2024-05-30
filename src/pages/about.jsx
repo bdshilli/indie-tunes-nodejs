@@ -1,8 +1,31 @@
-const about = () => {
+/*const about = () => {
+  function importAll(r) {
+    return r.keys().map(r);
+  }
+  const images = importAll(
+    require.context("../images/slideshow", false, /\.(png|jpe?g|svg)$/)
+  );
+
+  const [index, setIndex] = useState(0);
+
+  const slideForward = () => {
+    setIndex(index === images.length - 1 ? 0 : index + 1);
+  };
+
+  const slideBackward = () => {
+    setIndex(index === 0 ? images.length - 1 : index - 1);
+  };
+
   return (
     <div id="genre" class="margins">
-      <section class="banner">
-        <img src="https://placehold.co/1000x200" />
+      <section id="slideshow" class="banner">
+        <img src={images[index]} alt={images[index]} />
+        <p id="forward-arrow" onClick={slideForward}>
+          &gt;
+        </p>
+        <p id="backward-arrow" onClick={slideBackward}>
+          &lt;
+        </p>
       </section>
       <section class>
         <h2>About Us</h2>
@@ -40,3 +63,4 @@ const about = () => {
 };
 
 export default about;
+*/

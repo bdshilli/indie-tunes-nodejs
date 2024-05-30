@@ -1,4 +1,4 @@
-import { useState } from "react";
+/*import { useState } from "react";
 const Contact = () => {
   const [result, setResult] = React.useState("");
 
@@ -40,3 +40,4 @@ const Contact = () => {
 };
 
 export default Contact;
+*/
