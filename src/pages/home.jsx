@@ -1,6 +1,6 @@
 import "../styles/home.css";
 import "../styles/styles.css";
-const home = () => {
+const Home = () => {
   return (
     <>
       <div class="columns">
@@ -106,4 +106,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;

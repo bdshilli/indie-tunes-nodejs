@@ -1,4 +1,4 @@
-const genrelist = () => {
+const GenreList = () => {
   return <h2>Genre List</h2>;
 };
-export default genrelist;
+export default GenreList;

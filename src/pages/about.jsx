@@ -1,4 +1,4 @@
-const about = () => {
+const About = () => {
   /*
   function importAll(r) {
     return r.keys().map(r);
@@ -65,4 +65,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;
