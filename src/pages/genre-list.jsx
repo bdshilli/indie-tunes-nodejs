@@ -1,5 +1,6 @@
 import "../styles/genresartists.css";
 import "../styles/styles.css";
+import "../styles/directory.css";
 import BoxGenre from "../components/box-genre";
 
 const GenreList = () => {

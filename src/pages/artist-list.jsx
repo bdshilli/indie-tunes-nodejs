@@ -1,5 +1,6 @@
 import "../styles/genresartists.css";
 import "../styles/styles.css";
+import "../styles/directory.css";
 import BoxArtist from "../components/box-artist";
 
 const ArtistList = () => {

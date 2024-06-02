@@ -7,12 +7,12 @@ import ListSong from "../components/list-song";
 
 const Genre = () => {
   return (
-    <div id="genre" class="margins">
+    <div id="genre">
       <section class="banner">
         <img src="https://bdshilli.github.io/json/images/indierap.jpg" />
       </section>
       <section class="columns">
-        <div class="one directory columns wrap">
+        <div class="one directory">
           <BoxAlbum
             image={"bradley2.jpg"}
             title={"Don't Bully Me"}

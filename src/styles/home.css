@@ -40,10 +40,19 @@
 }
 
 #top-trending {
+  align-items: center;
 }
 
 #explore {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#released {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #explore section {
@@ -67,6 +76,22 @@
 }
 
 #concerts img {
-  width: 90%;
+  width: 100%;
   height: auto;
+}
+
+#concerts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 900px) {
+  #concerts {
+    display: block;
+  }
+
+  #released {
+    display: block;
+  }
 }

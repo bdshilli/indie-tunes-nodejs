@@ -1,7 +1,3 @@
-.directory {
-  justify-content: center;
-}
-
 .search-bar {
   display: flex;
   flex-wrap: wrap;
@@ -19,9 +15,5 @@
 @media only screen and (min-width: 900px) {
   .search-bar {
     justify-content: right;
-  }
-
-  .directory {
-    justify-content: left;
   }
 }

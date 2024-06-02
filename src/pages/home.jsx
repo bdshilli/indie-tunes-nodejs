@@ -83,7 +83,7 @@ const Home = () => {
           </section>
         </section>
       </div>
-      <div>
+      <div id="released">
         <h2>Newly Released Albums</h2>
         {fullAlbums.map((fullAlbum) => (
           <FullAlbum
