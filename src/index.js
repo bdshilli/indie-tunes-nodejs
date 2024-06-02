@@ -9,6 +9,9 @@ import ArtistList from "./pages/artist-list";
 import GenreList from "./pages/genre-list";
 import Cart from "./pages/cart";
 import Contact from "./pages/contact";
+import Artist from "./pages/artist";
+import Genre from "./pages/genre";
+import Album from "./pages/album";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -20,6 +23,9 @@ root.render(
         <Route path="genrelist" element={<GenreList />} />
         <Route path="cart" element={<Cart />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="artist" element={<Artist />} />
+        <Route path="genre" element={<Genre />} />
+        <Route path="album" element={<Album />} />
       </Route>
     </Routes>
   </BrowserRouter>

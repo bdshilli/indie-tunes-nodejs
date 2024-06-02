@@ -1,0 +1,12 @@
+#genre {
+  padding-top: 10px;
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+}

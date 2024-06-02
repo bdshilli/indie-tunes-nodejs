@@ -1,0 +1,14 @@
+/* Main-content album */
+
+#album {
+  padding-top: 10px;
+}
+
+#album ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+#album li {
+  text-decoration: none;
+}

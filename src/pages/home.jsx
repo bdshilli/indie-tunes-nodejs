@@ -1,8 +1,23 @@
 import "../styles/home.css";
 import "../styles/styles.css";
 import BoxSong from "../components/box-song";
+import ListSong from "../components/list-song";
+import FullAlbum from "../components/full-album";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const Home = () => {
+  const [fullAlbums, setAlbums] = useState([]);
+
+  useEffect(() => {
+    (async () => {
+      const response = await axios.get(
+        "https://bdshilli.github.io/json/album-list.json"
+      );
+      setAlbums(response.data);
+    })();
+  }, []);
+
   return (
     <>
       <div class="columns">
@@ -10,100 +25,77 @@ const Home = () => {
           <h2>Top Trending</h2>
           <section class="directory">
             <ul id="top-trending-list" class="box-ul">
-              <li class="box">
-                <a href="artist.html">
-                  <img src="images/albums/nic.jpg" alt="placeholder" />
-                </a>
-                <ul>
-                  <li>
-                    <b>
-                      <a id="song-title " href="artist.html">
-                        Yee Yee
-                      </a>
-                    </b>
-                  </li>
-                  <li>
-                    <a id="album-title " href="artist.html">
-                      Redneck Rap
-                    </a>
-                  </li>
-                  <li>
-                    <ul id="artist-list">
-                      <li>
-                        <a>Nic</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <BoxSong song-title="hello" />
+              <BoxSong
+                image={"nic.jpg"}
+                title={"Yee Yee"}
+                album={"Redneck Rap"}
+                artist={"nic"}
+              />
+              <BoxSong
+                image={"nic.jpg"}
+                title={"Yee Yee"}
+                album={"Redneck Rap"}
+                artist={"nic"}
+              />
+              <BoxSong
+                image={"nic.jpg"}
+                title={"Yee Yee"}
+                album={"Redneck Rap"}
+                artist={"nic"}
+              />
             </ul>
           </section>
           <div id="concerts">
             <h2>Upcoming Concerts</h2>
-            <img src="images/banner.jpg" alt="banner placeholder" />
+            <img
+              src="https://bdshilli.github.io/json/images/banner.jpg"
+              alt="banner placeholder"
+            />
           </div>
         </section>
         <section id="explore" class="one">
           <h2>Explore</h2>
           <section>
-            <div class="one box">
-              <a href="album.html">
-                <img src="images/albums/bradley2.jpg" alt="placeholder" />
-              </a>
-              <ul>
-                <li>
-                  <h3>
-                    <a href="album.html">Jobless</a>
-                  </h3>
-                </li>
-                <li>
-                  <a href="album.html">Stepdad Vibes</a>
-                </li>
-                <li>
-                  <a href="artist.html">Big Brad</a>
-                </li>
-              </ul>
-            </div>
-            <div class="one box">
-              <a href="album.html">
-                <img src="images/albums/bradley2.jpg" alt="placeholder" />
-              </a>
-              <ul>
-                <li>
-                  <h3>
-                    <a href="album.html">Deadbeat Dad</a>
-                  </h3>
-                </li>
-                <li>
-                  <a href="album.html">Stepdad Vibes</a>
-                </li>
-                <li>
-                  <a href="artist.html">Big Brad</a>
-                </li>
-              </ul>
-            </div>
-            <div class="one box">
-              <a href="album.html">
-                <img src="images/albums/nic.jpg" alt="placeholder" />
-              </a>
-              <ul>
-                <li>
-                  <h3>
-                    <a href="album.html">Rivian Grind</a>
-                  </h3>
-                </li>
-                <li>
-                  <a href="album.html">Redneck Rap</a>
-                </li>
-                <li>
-                  <a href="artist.html">Nic</a>
-                </li>
-              </ul>
-            </div>
-            <img src="images/icons8-refresh-30.png" alt="placeholder" />
+            <ul>
+              <BoxSong
+                image={"bradley2.jpg"}
+                title={"Jobless"}
+                album={"Stepdad Vibes"}
+                artist={"Big Brad"}
+              />
+              <BoxSong
+                image={"bradley2.jpg"}
+                title={"Deadbeat Dad"}
+                album={"Stepdad Vibes"}
+                artist={"Big Brad"}
+              />
+              <BoxSong
+                image={"nic.jpg"}
+                title={"Rivian Grind"}
+                album={"Redneck Rap"}
+                artist={"Nic"}
+              />
+            </ul>
+            <img
+              src="https://bdshilli.github.io/json/images/icons8-refresh-30.png"
+              alt="placeholder"
+            />
           </section>
         </section>
+      </div>
+      <div>
+        <h2>Newly Released Albums</h2>
+        {fullAlbums.map((fullAlbum) => (
+          <FullAlbum
+            id={fullAlbum.id}
+            title={fullAlbum.title}
+            image={fullAlbum.image}
+            artists={fullAlbum.artist_list}
+            genre={fullAlbum.genre}
+            advisory={fullAlbum.advisory}
+            songs={fullAlbum.song_list}
+          />
+        ))}
       </div>
     </>
   );

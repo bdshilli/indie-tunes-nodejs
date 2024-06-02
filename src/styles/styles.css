@@ -55,6 +55,10 @@
     flex-wrap: nowrap;
   }
 
+  .hide-small {
+    display: flex;
+  }
+
   .hidden {
     display: none;
   }

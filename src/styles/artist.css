@@ -1,0 +1,19 @@
+/* Main-content artist */
+
+#artist {
+  padding-top: 10px;
+}
+
+#artist p {
+  text-align: left;
+}
+
+#artist-img {
+  width: 200px;
+}
+
+@media only screen and (min-width: 900px) {
+  #artist-img {
+    text-align: center;
+  }
+}

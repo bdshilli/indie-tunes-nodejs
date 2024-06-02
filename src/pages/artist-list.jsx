@@ -1,13 +1,17 @@
+import "../styles/genresartists.css";
+import "../styles/styles.css";
+import BoxArtist from "../components/box-artist";
+
 const ArtistList = () => {
   return (
     <main id="main-content">
-      <div class="margins">
+      <div>
         <section class="subheadding columns">
           <h2 class="one">Artists</h2>
           <div class="search-bar one">
             <input id="search-text" type="search" />
             <button id="search-btn">
-              <img src="images/icons8-magnifying-glass-50.png" />
+              <img src="https://bdshilli.github.io/json/images/icons8-magnifying-glass-50.png" />
             </button>
           </div>
         </section>
@@ -15,56 +19,20 @@ const ArtistList = () => {
           <h2>B</h2>
           <section class="directory">
             <ul class="box-ul">
-              <li class="box">
-                <a href="artist.html">
-                  <img src="images/albums/bradley.jpg" alt="placeholder" />
-                </a>
-                <ul>
-                  <li>
-                    <a href="artist.html">Big Brad</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="box">
-                <a href="artist.html">
-                  <img src="images/albums/benji.jpg" alt="placeholder" />
-                </a>
-                <ul>
-                  <li>
-                    <a href="artist.html">Benji</a>
-                  </li>
-                </ul>
-              </li>
+              <BoxArtist image={"bradley.jpg"} name={"Big Brad"} />
+              <BoxArtist image={"benji.jpg"} name={"Benji"} />
             </ul>
           </section>
           <h2>N</h2>
           <section class="directory">
             <ul class="box-ul">
-              <li class="box">
-                <a href="artist.html">
-                  <img src="images/albums/nic.jpg" alt="placeholder" />
-                </a>
-                <ul>
-                  <li>
-                    <a href="artist.html">Nic</a>
-                  </li>
-                </ul>
-              </li>
+              <BoxArtist image={"nic.jpg"} name={"Nic"} />
             </ul>
           </section>
           <h2>P</h2>
           <section class="directory">
             <ul class="box-ul">
-              <li class="box">
-                <a href="artist.html">
-                  <img src="images/albums/pip.jpg" alt="placeholder" />
-                </a>
-                <ul>
-                  <li>
-                    <a href="artist.html">Pip</a>
-                  </li>
-                </ul>
-              </li>
+              <BoxArtist image={"pip.jpg"} name={"Pip"} />
             </ul>
           </section>
         </section>

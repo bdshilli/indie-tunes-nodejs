@@ -1,16 +1,17 @@
 import "../styles/styles.css";
 import "../styles/boxgenre.css";
+import { Outlet, Link } from "react-router-dom";
 
 const BoxGenre = (boxGenre) => {
   const imageSrc = `https://bdshilli.github.io/json/images/albums/${boxGenre.image}`;
   return (
     <li class="box">
-      <a href="#">
+      <Link to="/genre">
         <img src={imageSrc} alt={boxGenre.image} />
-      </a>
+      </Link>
       <ul>
         <li>
-          <a href="#">{boxGenre.title}</a>
+          <Link to="/genre">{boxGenre.title}</Link>
         </li>
       </ul>
     </li>

@@ -1,5 +1,6 @@
 import "../styles/styles.css";
 import "../styles/listsong.css";
+import { Outlet, Link } from "react-router-dom";
 
 const ListSong = (listSong) => {
   /*const imageSrc = `https://github.com/bdshilli/bdshilli.github.io/tree/main/json/images${
@@ -9,8 +10,8 @@ const ListSong = (listSong) => {
     <li>
       <div class="song">
         <div class="left">
-          <a>{listSong.title}</a>
-          <a>{listSong.artist}</a>
+          <Link to="/album">{listSong.title}</Link>
+          <Link to="/artist">{listSong.artist}</Link>
         </div>
         <div class="right">
           <a>{listSong.length}</a>

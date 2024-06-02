@@ -1,29 +1,32 @@
 import "../styles/styles.css";
 import React, { useEffect } from "react";
 import { Outlet, Link } from "react-router-dom";
-const BoxSong = (song) => {
+const BoxSong = (boxSong) => {
+  const imageSrc = `https://bdshilli.github.io/json/images/albums/${boxSong.image}`;
   return (
     <li class="box">
-      <a href="artist.html">
-        <img id="song-img" src="images/albums/nic.jpg" alt="placeholder" />
-      </a>
+      <Link to="/album">
+        <img id="song-img" src={imageSrc} alt={boxSong.image} />
+      </Link>
       <ul>
         <li>
           <b>
-            <a id="song-title" href="artist.html">
-              Yee Yee
-            </a>
+            <Link to="/album">
+              <a id="song-title">{boxSong.title}</a>
+            </Link>
           </b>
         </li>
         <li>
-          <a id="album-title" href="artist.html">
-            Redneck Rap
-          </a>
+          <Link to="/album">
+            <a id="album-title">{boxSong.album}</a>
+          </Link>
         </li>
         <li>
           <ul id="artist-list">
             <li>
-              <a>Nic</a>
+              <Link to="/artist">
+                <a>{boxSong.artist}</a>
+              </Link>
             </li>
           </ul>
         </li>
