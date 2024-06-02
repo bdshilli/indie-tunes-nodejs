@@ -1,0 +1,27 @@
+.directory {
+  justify-content: center;
+}
+
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 20px;
+  min-width: 250px;
+  margin-top: 15px;
+}
+
+.search-bar img {
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (min-width: 900px) {
+  .search-bar {
+    justify-content: right;
+  }
+
+  .directory {
+    justify-content: left;
+  }
+}

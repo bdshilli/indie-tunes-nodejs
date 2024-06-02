@@ -1,0 +1,44 @@
+/*main content cart */
+
+h2 {
+  text-align: center;
+}
+
+#payment {
+  text-align: right;
+}
+
+#payment ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+#payment li {
+  padding: 5px;
+  white-space: nowrap;
+}
+
+#song-list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+#song-list li {
+  text-decoration: none;
+}
+
+#directory {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+@media only screen and (min-width: 900px) {
+  #directory {
+    justify-content: left;
+  }
+
+  h2 {
+    text-align: left;
+  }
+}

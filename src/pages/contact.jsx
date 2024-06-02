@@ -62,17 +62,6 @@ const Contact = () => {
                 required
               ></textarea>
             </p>
-            <input
-              type="hidden"
-              name="redirect"
-              value="https://web3forms.com/success"
-            />
-            <input
-              type="hidden"
-              name="subject"
-              value="Contact from Indie Tunes Website"
-            />
-            <input type="hidden" name="from_name" value="My Website" />
           </section>
 
           <p>

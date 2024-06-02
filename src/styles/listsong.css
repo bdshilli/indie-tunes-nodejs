@@ -1,0 +1,36 @@
+.song {
+  min-width: max-content;
+  display: flex;
+  margin-bottom: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--border-color);
+  padding: 5px;
+}
+
+.song img {
+  width: 15px;
+  padding: 0;
+  position: relative;
+  top: 2px;
+}
+
+.left {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+}
+
+.right {
+  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+}
+
+.song a {
+  padding: 10px;
+  white-space: nowrap;
+}

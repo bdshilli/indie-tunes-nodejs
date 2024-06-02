@@ -22,6 +22,22 @@ form section label {
   margin-bottom: 5px;
 }
 
+button {
+  color: black;
+  background-color: #56a1a4;
+  border-color: teal;
+  font-size: medium;
+  padding: 5px;
+}
+
+button:hover {
+  color: white;
+  background-color: #56a1a4;
+  border-color: teal;
+  font-size: medium;
+  padding: 5px;
+}
+
 @media only screen and (min-width: 900px) {
   form {
     display: block;

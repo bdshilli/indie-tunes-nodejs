@@ -1,5 +1,7 @@
 import "../styles/home.css";
 import "../styles/styles.css";
+import BoxSong from "../components/box-song";
+
 const Home = () => {
   return (
     <>
@@ -34,6 +36,7 @@ const Home = () => {
                   </li>
                 </ul>
               </li>
+              <BoxSong song-title="hello" />
             </ul>
           </section>
           <div id="concerts">
