@@ -7,12 +7,11 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const Home = () => {
-  const [fullAlbums, setAlbums] = useState([]);
+  const [albums, setAlbums] = useState([]);
 
   useEffect(() => {
     (async () => {
       const response = await axios.get(
-        //"https://bdshilli.github.io/json/album-list.json"
         "https://indie-tunes-housing-backend.onrender.com/api/albums"
       );
       setAlbums(response.data);
@@ -86,15 +85,15 @@ const Home = () => {
       </div>
       <div id="released">
         <h2>Newly Released Albums</h2>
-        {fullAlbums.map((fullAlbum) => (
+        {albums.map((album) => (
           <FullAlbum
-            id={fullAlbum.id}
-            title={fullAlbum.title}
-            image={fullAlbum.image}
-            artists={fullAlbum.artist_list}
-            genre={fullAlbum.genre}
-            advisory={fullAlbum.advisory}
-            songs={fullAlbum.song_list}
+            id={album.id}
+            title={album.title}
+            image={album.image}
+            artists={album.artist_list}
+            genre={album.genre}
+            advisory={album.advisory}
+            songs={album.song_list}
           />
         ))}
       </div>
