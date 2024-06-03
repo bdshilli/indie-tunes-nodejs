@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/indie-tunes-nodejs/static/css/main.7607f7e5.css",
-    "main.js": "/indie-tunes-nodejs/static/js/main.f5e2b1c4.js",
+    "main.js": "/indie-tunes-nodejs/static/js/main.23223908.js",
     "index.html": "/indie-tunes-nodejs/index.html",
     "main.7607f7e5.css.map": "/indie-tunes-nodejs/static/css/main.7607f7e5.css.map",
-    "main.f5e2b1c4.js.map": "/indie-tunes-nodejs/static/js/main.f5e2b1c4.js.map"
+    "main.23223908.js.map": "/indie-tunes-nodejs/static/js/main.23223908.js.map"
   },
   "entrypoints": [
     "static/css/main.7607f7e5.css",
-    "static/js/main.f5e2b1c4.js"
+    "static/js/main.23223908.js"
   ]
 }
