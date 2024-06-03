@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 import { Outlet, Link } from "react-router-dom";
 
 const FullAlbum = (fullAlbum) => {
-  const imageSrc = `https://bdshilli.github.io/json/images/albums/${fullAlbum.image}`;
+  const imageSrc = `https://indie-tunes-housing-backend.onrender.com/images/albums/${fullAlbum.image}`;
   return (
     <div id="falbum">
       <img id="album-image" src={imageSrc} alt="placeholder" />

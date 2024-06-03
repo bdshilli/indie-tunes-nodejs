@@ -12,7 +12,8 @@ const Home = () => {
   useEffect(() => {
     (async () => {
       const response = await axios.get(
-        "https://bdshilli.github.io/json/album-list.json"
+        //"https://bdshilli.github.io/json/album-list.json"
+        "https://indie-tunes-housing-backend.onrender.com/api/albums"
       );
       setAlbums(response.data);
     })();
