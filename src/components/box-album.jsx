@@ -3,7 +3,7 @@ import "../styles/boxalbum.css";
 import { Outlet, Link } from "react-router-dom";
 
 const BoxAlbum = (boxAlbum) => {
-  const imageSrc = `https://bdshilli.github.io/json/images/albums/${boxAlbum.image}`;
+  const imageSrc = `https://indie-tunes-housing-backend.onrender.com/images/albums/${boxAlbum.image}`;
   return (
     <div class="directory columns wrap ">
       <div class="one box">

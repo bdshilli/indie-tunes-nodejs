@@ -3,7 +3,7 @@ import "../styles/boxartist.css";
 import { Outlet, Link } from "react-router-dom";
 
 const BoxArtist = (boxArtist) => {
-  const imageSrc = `https://bdshilli.github.io/json/images/albums/${boxArtist.image}`;
+  const imageSrc = `https://indie-tunes-housing-backend.onrender.com/images/albums/${boxArtist.image}`;
   return (
     <li class="box">
       <Link to="/artist">

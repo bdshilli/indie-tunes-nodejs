@@ -12,7 +12,7 @@ const ArtistList = () => {
           <div class="search-bar one">
             <input id="search-text" type="search" />
             <button id="search-btn">
-              <img src="https://bdshilli.github.io/json/images/icons8-magnifying-glass-50.png" />
+              <img src="https://indie-tunes-housing-backend.onrender.com/images/icons8-magnifying-glass-50.png" />
             </button>
           </div>
         </section>

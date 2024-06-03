@@ -2,7 +2,7 @@ import "../styles/styles.css";
 import React, { useEffect } from "react";
 import { Outlet, Link } from "react-router-dom";
 const BoxSong = (boxSong) => {
-  const imageSrc = `https://bdshilli.github.io/json/images/albums/${boxSong.image}`;
+  const imageSrc = `https://indie-tunes-housing-backend.onrender.com/images/albums/${boxSong.image}`;
   return (
     <li class="box">
       <Link to="/album">

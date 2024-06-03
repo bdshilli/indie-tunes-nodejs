@@ -3,7 +3,7 @@ import "../styles/boxgenre.css";
 import { Outlet, Link } from "react-router-dom";
 
 const BoxGenre = (boxGenre) => {
-  const imageSrc = `https://bdshilli.github.io/json/images/albums/${boxGenre.image}`;
+  const imageSrc = `https://indie-tunes-housing-backend.onrender.com/images/albums/${boxGenre.image}`;
   return (
     <li class="box">
       <Link to="/genre">

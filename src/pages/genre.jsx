@@ -9,7 +9,7 @@ const Genre = () => {
   return (
     <div id="genre">
       <section class="banner">
-        <img src="https://bdshilli.github.io/json/images/indierap.jpg" />
+        <img src="https://indie-tunes-housing-backend.onrender.com/images/indierap.jpg" />
       </section>
       <section class="columns">
         <div class="one directory">

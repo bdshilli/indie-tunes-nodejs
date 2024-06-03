@@ -8,7 +8,7 @@ const Artist = () => {
     <div id="artist">
       <img
         id="artist-img"
-        src="https://bdshilli.github.io/json/images/albums/nic.jpg"
+        src="https://indie-tunes-housing-backend.onrender.com/images/albums/nic.jpg"
         alt="placeholder"
       />
       <h2>Nic</h2>
