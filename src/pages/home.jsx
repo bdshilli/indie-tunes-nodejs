@@ -48,7 +48,7 @@ const Home = () => {
           <div id="concerts">
             <h2>Upcoming Concerts</h2>
             <img
-              src="https://bdshilli.github.io/json/images/banner.jpg"
+              src="https://indie-tunes-housing-backend.onrender.com/images/banner.jpg"
               alt="banner placeholder"
             />
           </div>
@@ -77,7 +77,7 @@ const Home = () => {
               />
             </ul>
             <img
-              src="https://bdshilli.github.io/json/images/icons8-refresh-30.png"
+              src="https://indie-tunes-housing-backend.onrender.com/icons8-refresh-30.png"
               alt="placeholder"
             />
           </section>
