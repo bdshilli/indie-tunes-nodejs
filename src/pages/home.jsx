@@ -77,7 +77,7 @@ const Home = () => {
               />
             </ul>
             <img
-              src="https://indie-tunes-housing-backend.onrender.com/icons8-refresh-30.png"
+              src="https://indie-tunes-housing-backend.onrender.com/images/icons8-refresh-30.png"
               alt="placeholder"
             />
           </section>
