@@ -5,7 +5,10 @@
   border-top-style: solid;
   border-top-color: var(--border-color);
   margin-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
   height: fit-content;
+  background-color: var(--header-footer-color);
 }
 
 #contact-footer {

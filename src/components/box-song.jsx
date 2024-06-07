@@ -11,22 +11,16 @@ const BoxSong = (boxSong) => {
       <ul>
         <li>
           <b>
-            <Link to="/album">
-              <a id="song-title">{boxSong.title}</a>
-            </Link>
+            <Link to="/album">{boxSong.title}</Link>
           </b>
         </li>
         <li>
-          <Link to="/album">
-            <a id="album-title">{boxSong.album}</a>
-          </Link>
+          <Link to="/album">{boxSong.album}</Link>
         </li>
         <li>
           <ul id="artist-list">
             <li>
-              <Link to="/artist">
-                <a>{boxSong.artist}</a>
-              </Link>
+              <Link to="/artist">{boxSong.artist}</Link>
             </li>
           </ul>
         </li>

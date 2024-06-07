@@ -15,18 +15,9 @@ const FullAlbum = (fullAlbum) => {
         </li>
         <li>
           <a>
-            <b>Artists:</b>
+            <b>Artist: </b>
           </a>
-        </li>
-        <li>
-          <p>
-            {fullAlbum.artists.map((artist) => {
-              return artist.name;
-            })}
-          </p>
-        </li>
-        <li>
-          <a>&nbsp;</a>
+          <a>{fullAlbum.artist}</a>
         </li>
         <li>
           <a>
@@ -43,7 +34,7 @@ const FullAlbum = (fullAlbum) => {
       </ul>
       <ul id="song-list">
         {fullAlbum.songs.map((song) => (
-          <ListSong title={song.title} length={song.length} />
+          <ListSong key={song.title} title={song.title} length={song.length} />
         ))}
       </ul>
     </div>

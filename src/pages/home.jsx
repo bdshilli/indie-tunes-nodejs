@@ -3,11 +3,13 @@ import "../styles/styles.css";
 import BoxSong from "../components/box-song";
 import ListSong from "../components/list-song";
 import FullAlbum from "../components/full-album";
+import AddDialog from "../components/add-dialog";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const Home = () => {
   const [albums, setAlbums] = useState([]);
+  const [showAddDialog, setShowAddDialog] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -17,6 +19,18 @@ const Home = () => {
       setAlbums(response.data);
     })();
   }, []);
+
+  const addAlbum = (album) => {
+    setAlbums((albums) => [...albums, album]);
+  };
+
+  const openAddDialog = () => {
+    setShowAddDialog(true);
+  };
+
+  const closeAddDialog = () => {
+    setShowAddDialog(false);
+  };
 
   return (
     <>
@@ -85,12 +99,20 @@ const Home = () => {
       </div>
       <div id="released">
         <h2>Newly Released Albums</h2>
+        <button id="add-house" onClick={openAddDialog}>
+          +
+        </button>
+        {showAddDialog ? (
+          <AddDialog closeDialog={closeAddDialog} addAlbum={addAlbum} />
+        ) : (
+          ""
+        )}
         {albums.map((album) => (
           <FullAlbum
-            id={album.id}
+            key={album.title}
             title={album.title}
             image={album.image}
-            artists={album.artist_list}
+            artist={album.artist}
             genre={album.genre}
             advisory={album.advisory}
             songs={album.song_list}

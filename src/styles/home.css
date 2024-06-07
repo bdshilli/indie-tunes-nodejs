@@ -50,9 +50,17 @@
 }
 
 #released {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#add-house {
+  color: white;
+  background: var(--primary-color);
+  width: 100px;
+  border: none;
 }
 
 #explore section {
@@ -62,6 +70,7 @@
   border-style: solid;
   border-color: var(--border-color);
   max-width: fit-content;
+  background-color: var(--secondary-background);
 }
 
 #explore ul {

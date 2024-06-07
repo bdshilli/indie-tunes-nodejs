@@ -4,7 +4,7 @@ import { Outlet, Link } from "react-router-dom";
 
 const ListSong = (listSong) => {
   return (
-    <li>
+    <li key={listSong.key}>
       <div class="song">
         <div class="left">
           <Link to="/album">{listSong.title}</Link>
