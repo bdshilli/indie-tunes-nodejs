@@ -7,16 +7,13 @@ const BoxAlbum = (boxAlbum) => {
   return (
     <div class="directory columns wrap ">
       <div class="one box">
-        <Link to="/album">
-          <img src={imageSrc} alt={boxAlbum.imag} />
-        </Link>
-
+        <img src={imageSrc} alt={boxAlbum.image} />
         <ul>
           <li>
-            <Link to="/album">{boxAlbum.title}</Link>
+            <b>{boxAlbum.title}</b>
           </li>
           <li>
-            <Link to="/artist">{boxAlbum.artist}</Link>
+            <a>{boxAlbum.artist}</a>
           </li>
         </ul>
       </div>

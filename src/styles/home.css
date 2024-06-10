@@ -56,13 +56,6 @@
   align-items: center;
 }
 
-#add-house {
-  color: white;
-  background: var(--primary-color);
-  width: 100px;
-  border: none;
-}
-
 #explore section {
   padding: 10px;
   text-align: center;

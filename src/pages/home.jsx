@@ -1,13 +1,17 @@
 import "../styles/home.css";
 import "../styles/styles.css";
 import BoxSong from "../components/box-song";
-import ListSong from "../components/list-song";
-import FullAlbum from "../components/full-album";
-import AddDialog from "../components/add-dialog";
+import BoxAlbum from "../components/box-album";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const Home = () => {
+  // get random item from a Set (from https://stackoverflow.com/questions/42739256/how-get-random-item-from-es6-map-or-set)
+  function getRandomItem(set) {
+    let items = Array.from(set);
+    return items[Math.floor(Math.random() * items.length)];
+  }
+
   const [albums, setAlbums] = useState([]);
   const [showAddDialog, setShowAddDialog] = useState(false);
 
@@ -19,19 +23,6 @@ const Home = () => {
       setAlbums(response.data);
     })();
   }, []);
-
-  const addAlbum = (album) => {
-    setAlbums((albums) => [...albums, album]);
-  };
-
-  const openAddDialog = () => {
-    setShowAddDialog(true);
-  };
-
-  const closeAddDialog = () => {
-    setShowAddDialog(false);
-  };
-
   return (
     <>
       <div class="columns">
@@ -39,24 +30,9 @@ const Home = () => {
           <h2>Top Trending</h2>
           <section class="directory">
             <ul id="top-trending-list" class="box-ul">
-              <BoxSong
-                image={"nic.jpg"}
-                title={"Yee Yee"}
-                album={"Redneck Rap"}
-                artist={"nic"}
-              />
-              <BoxSong
-                image={"nic.jpg"}
-                title={"Yee Yee"}
-                album={"Redneck Rap"}
-                artist={"nic"}
-              />
-              <BoxSong
-                image={"nic.jpg"}
-                title={"Yee Yee"}
-                album={"Redneck Rap"}
-                artist={"nic"}
-              />
+              <BoxAlbum image={"nic.jpg"} title={"Yee Yee"} artist={"nic"} />
+              <BoxAlbum image={"nic.jpg"} title={"Yee Yee"} artist={"nic"} />
+              <BoxAlbum image={"nic.jpg"} title={"Yee Yee"} artist={"nic"} />
             </ul>
           </section>
           <div id="concerts">
@@ -96,28 +72,6 @@ const Home = () => {
             />
           </section>
         </section>
-      </div>
-      <div id="released">
-        <h2>Newly Released Albums</h2>
-        <button id="add-house" onClick={openAddDialog}>
-          +
-        </button>
-        {showAddDialog ? (
-          <AddDialog closeDialog={closeAddDialog} addAlbum={addAlbum} />
-        ) : (
-          ""
-        )}
-        {albums.map((album) => (
-          <FullAlbum
-            key={album.title}
-            title={album.title}
-            image={album.image}
-            artist={album.artist}
-            genre={album.genre}
-            advisory={album.advisory}
-            songs={album.song_list}
-          />
-        ))}
       </div>
     </>
   );

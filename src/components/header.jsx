@@ -35,7 +35,7 @@ const Header = () => {
               <Link to="/artistlist">Artists</Link>
             </li>
             <li>
-              <Link to="/genrelist">Genres</Link>
+              <Link to="/albumlist">Albums</Link>
             </li>
             <li>
               <Link to="/cart">Cart</Link>

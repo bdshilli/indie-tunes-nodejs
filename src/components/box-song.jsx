@@ -5,22 +5,20 @@ const BoxSong = (boxSong) => {
   const imageSrc = `https://indie-tunes-housing-backend.onrender.com/images/albums/${boxSong.image}`;
   return (
     <li class="box">
-      <Link to="/album">
-        <img id="song-img" src={imageSrc} alt={boxSong.image} />
-      </Link>
+      <img id="song-img" src={imageSrc} alt={boxSong.image} />
       <ul>
         <li>
           <b>
-            <Link to="/album">{boxSong.title}</Link>
+            <a>{boxSong.title}</a>
           </b>
         </li>
         <li>
-          <Link to="/album">{boxSong.album}</Link>
+          <a>{boxSong.album}</a>
         </li>
         <li>
           <ul id="artist-list">
             <li>
-              <Link to="/artist">{boxSong.artist}</Link>
+              <a>{boxSong.artist}</a>
             </li>
           </ul>
         </li>

@@ -4,14 +4,12 @@ import { Outlet, Link } from "react-router-dom";
 
 const ListSong = (listSong) => {
   return (
-    <li key={listSong.key}>
+    <li key={listSong.title}>
       <div class="song">
         <div class="left">
-          <Link to="/album">{listSong.title}</Link>
-          <Link to="/artist">{listSong.artist}</Link>
+          <a>{listSong.title}</a>
         </div>
         <div class="right">
-          <a>{listSong.length}</a>
           <a>
             <img src="https://indie-tunes-housing-backend.onrender.com/images/icons8-play-30.png" />
           </a>

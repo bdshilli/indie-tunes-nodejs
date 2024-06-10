@@ -7,9 +7,9 @@ import { Outlet, Link } from "react-router-dom";
 const FullAlbum = (fullAlbum) => {
   const imageSrc = `https://indie-tunes-housing-backend.onrender.com/images/albums/${fullAlbum.image}`;
   return (
-    <div id="falbum">
-      <img id="album-image" src={imageSrc} alt="placeholder" />
-      <ul>
+    <div id="falbum" class="columns">
+      <img class="one" id="album-image" src={imageSrc} alt="placeholder" />
+      <ul class="one">
         <li>
           <h2 id="album-title">{fullAlbum.title}</h2>
         </li>
@@ -31,11 +31,6 @@ const FullAlbum = (fullAlbum) => {
           </a>
           <a id="album-advisory">{fullAlbum.advisory}</a>
         </li>
-      </ul>
-      <ul id="song-list">
-        {fullAlbum.songs.map((song) => (
-          <ListSong key={song.title} title={song.title} length={song.length} />
-        ))}
       </ul>
     </div>
   );
