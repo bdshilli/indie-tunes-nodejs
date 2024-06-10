@@ -13,7 +13,9 @@
   position: relative;
 }
 
-#add-dialog {
+#add-dialog,
+#edit-dialog,
+#delete-dialog {
   display: block;
 }
 

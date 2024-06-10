@@ -11,6 +11,17 @@
   background-color: var(--secondary-background);
 }
 
+#change-buttons {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#change-buttons a {
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-right: 20px;
+}
+
 #album-image {
   width: 100%;
   max-width: 200px;

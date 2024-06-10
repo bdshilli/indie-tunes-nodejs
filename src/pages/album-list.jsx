@@ -15,6 +15,7 @@ const AlbumList = () => {
     (async () => {
       const response = await axios.get(
         "https://indie-tunes-housing-backend.onrender.com/api/albums"
+        //"http://localhost:3001/api/albums"
       );
       setAlbums(response.data);
     })();
@@ -46,12 +47,12 @@ const AlbumList = () => {
       {albums.map((album) => (
         <FullAlbum
           key={album.title}
+          _id={album._id}
           title={album.title}
           image={album.image}
           artist={album.artist}
           genre={album.genre}
           advisory={album.advisory}
-          songs={album.song_list}
         />
       ))}
     </div>
